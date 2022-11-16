@@ -18,12 +18,11 @@ public class StatisticsServiceTest {
 
         assertEquals(expected, actual);
     }
-
     @Test
     void findMaxInTheMiddle() {
         StatisticsService service = new StatisticsService();
 
-        long[] incomesInBillions = {12, 5, 8, 4, 5, 3, 80, 6, 11, 11, 12};
+        long[] incomesInBillions = {12, 5, 8, 4, 5, 80, 8, 6, 11, 11, 12};
         long expected = 80;
 
         long actual = service.findMax(incomesInBillions);
